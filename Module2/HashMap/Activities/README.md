@@ -22,5 +22,12 @@ Each activity is implemented using a **single class**, focusing on core operatio
   - `containsValue()`
   - `entrySet()` for ordered iteration
 
+### 2. `LinkedHashMap` (Access Order) — LRU Cache Using Students
+- Demonstrates use of **accessOrder=true** to implement a Least Recently Used (LRU) Cache.
+- Automatically removes the eldest (least recently accessed) entry when the size exceeds a fixed capacity.
+- Key Concepts:
+  - `LinkedHashMap` with access-based reordering
+  - Overriding `removeEldestEntry()` for eviction
+  - `Student` class with overridden `toString()` for display
 
 
