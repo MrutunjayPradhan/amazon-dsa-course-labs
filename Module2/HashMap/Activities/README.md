@@ -30,4 +30,16 @@ Each activity is implemented using a **single class**, focusing on core operatio
   - Overriding `removeEldestEntry()` for eviction
   - `Student` class with overridden `toString()` for display
 
+### 3. `TreeMap` — Online Bookstore Inventory Manager
+- Manages a growing inventory of books using `TreeMap` to maintain sorted order of ISBNs.
+- Operations implemented:
+  - ✅ Add or update a book (`put`)
+  - ✅ Remove a book (`remove`)
+  - ✅ Retrieve a book title by ISBN (`get`, `containsKey`)
+  - ✅ Display all books in **alphabetical ISBN order**
+- Demonstrates use of:
+  - Natural key sorting via `TreeMap`
+  - Graceful handling of missing keys
+  - Clean, readable inventory output
+- Use case: Ideal for real-world inventory systems requiring sorted data display.
 
