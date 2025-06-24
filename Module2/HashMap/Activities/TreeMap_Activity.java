@@ -3,17 +3,17 @@ package Module2.HashMap.Activities;
 import java.util.TreeMap;
 
 
-public class TreeMap_Actitity {
+public class TreeMap_Activity {
      private TreeMap<String, String> books = new TreeMap<>();
 
     public void addOrUpdateBook(String isbn, String title) {
-        // TODO 1: add or update to the TreeMap
+        // Task1: add or update to the TreeMap
         books.put(isbn,title);
         System.out.println("Book with ISBN "+isbn+" has been added/ updated");
     }
 
     public void removeBook(String isbn) {
-        // TODO 2: check and remove only if present from the TreeMap, else print appropriate message
+        // Task 2: check and remove only if present from the TreeMap, else print appropriate message
        String currBook = books.remove(isbn);
        if(currBook != null){
            System.out.println("Book with ISBN "+isbn+" has been removed.");
@@ -23,7 +23,7 @@ public class TreeMap_Actitity {
     }
 
     public void getBookTitle(String isbn) {
-        // TODO 3: get from TreeMap and print appropriate message if not found
+        // Task 3: get from TreeMap and print appropriate message if not found
         boolean contains = books.containsKey(isbn);
         if(contains){
             System.out.println("ISBN "+isbn+": Effective Java");
@@ -34,7 +34,7 @@ public class TreeMap_Actitity {
     }
 
     public void displayAllBooks() {
-        // TODO 4: display all the elements in TreeMap
+        // Task 4: display all the elements in TreeMap
         if(books.isEmpty()){
             System.out.println("Empty book");
         }else{
@@ -43,7 +43,7 @@ public class TreeMap_Actitity {
     }
 
     public static void main(String[] args) {
-        TreeMap_Actitity inventory = new TreeMap_Actitity();
+        TreeMap_Activity inventory = new TreeMap_Activity();
 
         // Add or update books
         inventory.addOrUpdateBook("978-0134685991", "Effective Java");
