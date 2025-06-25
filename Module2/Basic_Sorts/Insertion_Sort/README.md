@@ -41,7 +41,7 @@ Sorted names in reverse order: Sophia Ria Jodee James Augusta
 ---
 
 ## 📌 Sample Output
-
+Sorted names in reverse order: Sophia Ria Jodee James Augusta
 
 ---
 
